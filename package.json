@@ -1,13 +1,16 @@
 {
   "name": "starter-solo-sphere",
-  "private": true,
   "type": "module",
+  "private": true,
+  "packageManager": "pnpm@8.9.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.26",
@@ -17,6 +20,5 @@
     "nuxt": "^3.7.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
-  },
-  "packageManager": "pnpm@8.9.0"
+  }
 }
