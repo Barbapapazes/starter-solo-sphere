@@ -9,8 +9,8 @@ devDependencies:
     specifier: 1.0.0-beta.26
     version: 1.0.0-beta.26(eslint@8.51.0)(typescript@5.2.2)(vitest@0.34.6)
   '@barbapapazes/solo-sphere':
-    specifier: ^0.0.3
-    version: 0.0.3(nuxt@3.7.4)(tailwindcss@3.3.3)(vue@3.3.4)(webpack@5.88.2)
+    specifier: ^0.0.8
+    version: 0.0.8(nuxt@3.7.4)(tailwindcss@3.3.3)(vue@3.3.4)(webpack@5.88.2)
   '@nuxt/devtools':
     specifier: latest
     version: 1.0.0-beta.1(nuxt@3.7.4)(vite@4.4.11)
@@ -435,9 +435,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@barbapapazes/solo-sphere@0.0.3(nuxt@3.7.4)(tailwindcss@3.3.3)(vue@3.3.4)(webpack@5.88.2):
-    resolution: {integrity: sha512-/D26zFd8zW7HLJNNHmk8RoUMhFmVjWpg1qsOtLK7a07kyxCHm3hhPTfgOg1rq+WaduWIi0WLw8xtjreP7zDfcA==}
-    requiresBuild: true
+  /@barbapapazes/solo-sphere@0.0.8(nuxt@3.7.4)(tailwindcss@3.3.3)(vue@3.3.4)(webpack@5.88.2):
+    resolution: {integrity: sha512-BpqOE5qxyt9L0zn/aQmG+bXeh7tloSyy2MmrZgCQTpqHGC5hrpBmRObtmaY28ZpWkT+7o9i3e0/MdQmY/LVm1A==}
     dependencies:
       '@egoist/tailwindcss-icons': 1.3.3(tailwindcss@3.3.3)
       '@iconify-json/heroicons': 1.1.12
@@ -1075,6 +1074,7 @@ packages:
   /@koa/router@9.4.0:
     resolution: {integrity: sha512-dOOXgzqaDoHu5qqMEPLKEgLz5CeIA7q8+1W62mCvFVCOqeC71UoTGJ4u1xUSOpIl2J1x2pqrNULkFteUeZW3/A==}
     engines: {node: '>= 8.0.0'}
+    deprecated: '**IMPORTANT 10x+ PERFORMANCE UPGRADE**: Please upgrade to v12.0.1+ as we have fixed an issue with debuglog causing 10x slower router benchmark performance, see https://github.com/koajs/router/pull/173'
     dependencies:
       debug: 4.3.4
       http-errors: 1.8.1
